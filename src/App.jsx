@@ -1,11 +1,12 @@
-import "./App.css";
-import MainToDo from "./MainToDo";
+import styles from "./App.module.css";
+import MainToDo from './components/MainToDo/MainToDo'
+
 
 function App() {
   
   return (
-    <div className="App">
-      <div className='title'>React ToDo List</div>
+    <div className={styles.app}>
+      <div className={styles.title}>React ToDo List</div>
      <MainToDo />
     </div>
   );
