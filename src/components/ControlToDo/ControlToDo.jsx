@@ -1,9 +1,9 @@
-import styles from './Header.module.css';
+import styles from './ConrtolToDo.module.css';
 
-function Header({ todo, deleteTodoDone, todoDone, deleteTodoAll }) {
+function ConrtolToDo({ todo, deleteTodoDone, todoDone, deleteTodoAll }) {
   console.log(styles);
   return (
-    <header className={styles.header}>
+    <ConrtolToDo className={styles.ConrtolToDo}>
         <div className={styles.badgeTaskCounter}>
           Tasks
           <div className={styles.countNumber}>{todo}</div>
@@ -26,8 +26,8 @@ function Header({ todo, deleteTodoDone, todoDone, deleteTodoAll }) {
           Tasks
           <div className="material-icons" style={{ color: "white" }}>delete</div>
         </button>
-    </header>
+    </ConrtolToDo>
   );
 }
 
-export default Header;
+export default ConrtolToDo;

@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 import "./MainToDo.css";
 
-import Header from "./Header";
+import ConrtolToDo from "./ConrtolToDo";
 import TaskString from "./TaskString";
 import Bottom from "./Bottom";
 
@@ -57,7 +57,7 @@ const MainToDo = () => {
 
   return (
     <div className="MainToDo">
-      <Header
+      <ConrtolToDo
         todo={todo.length}
         deleteTodoDone={deleteTodoDone}
         todoStatus={todo.status}

@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 import styles from"./MainToDo.module.css";
 
-import Header from "../Header/Header";
+import ConrtolToDo from "../ConrtolToDo/ConrtolToDo";
 import TaskListItem from "../TaskListItem/TaskListItem";
 import InputForm from "../InputForm/InputForm";
 
@@ -57,7 +57,7 @@ const MainToDo = () => {
 
   return (
     <div className={styles.mainToDo}>
-      <Header
+      <ConrtolToDo
         todo={todo.length}
         deleteTodoDone={deleteTodoDone}
         todoStatus={todo.status}
